@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Babak Ahari",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -58.2, "attrs": {} },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": 50.6,
+      "left": -317.4,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 90.35,
+      "left": -144,
+      "attrs": { "value": "10000" }
+    }
+  ],
+  "connections": [
+    [ "uno:A0", "ntc1:OUT", "green", [ "v38.3", "h-265" ] ],
+    [ "ntc1:GND", "uno:GND.1", "black", [ "h38.4", "v-96", "h201.3" ] ],
+    [ "ntc1:VCC", "r1:1", "red", [ "h0" ] ],
+    [ "uno:5V", "r1:2", "blue", [ "v19.1", "h-178.6" ] ]
+  ],
+  "dependencies": {}
+}
