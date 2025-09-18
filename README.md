@@ -4,7 +4,7 @@ This project simulates an Arduino UNO using Wokwi, focusing on temperature-relat
 
 ## Project Schematic
 
-![Schema01](Schema01.png)
+![Schema01](Schema01.PNG)
 
 ## Project Structure
 
