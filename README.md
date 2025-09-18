@@ -22,6 +22,18 @@ This project simulates an Arduino UNO using Wokwi, focusing on temperature-relat
 3. **Build**: Use Wokwi or Arduino IDE to compile the sketch. Build outputs are stored in the `build/arduino.avr.uno/` directory.
 4. **Simulate Hardware**: The `diagram.json` file defines the hardware connections for the simulation.
 
+## Serial JSON Data Output
+
+The project outputs temperature readings as JSON objects via the serial port. This makes it easy to integrate with other software or systems that consume JSON data.
+
+### Example Output
+
+```
+{"temperature":24.7}
+```
+
+Each line represents a temperature reading in Celsius, updated every second. You can use this data for logging, monitoring, or integration with other applications.
+
 ## Requirements
 
 - [Wokwi Simulator](https://wokwi.com/)
